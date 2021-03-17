@@ -9,7 +9,12 @@ LazySpray is a PowerShell Script that allow us to spray a set of credential agai
 Import-Module .\Invoke-LazySpray.ps1
 ```
 
-* Supply positional arguments `-Username` and `-Password`
+* Spray against all computers with current session
+```
+Invoke-LazySpray -Verbose
+```
+
+* Supply `-Username` and `-Password` (if available)
 ```
 Invoke-LazySpray -Username contoso\admin -Password 'G0dth1sisgr3at!' -Verbose
 ```
